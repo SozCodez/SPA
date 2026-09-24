@@ -22,16 +22,16 @@ sQavg = input("What is the student's quiz average? : ")
 print()
 sTavg = input("What is the student's test average? : ")
 print()
-sAttendance = int(input("What is the student's attendance percentage? : "))
+sAttendance = float(input("What is the student's attendance percentage? : "))
 print()
 sMissing = int(input("How many missing assignments does student have? : "))
 print()
 
 #calculate grade func
 def calculate_grade(aAvg, qAvg, tAvg):
-    decA = int(aAvg) * 0.01
-    decQ = int(qAvg) * 0.01
-    decT = int(tAvg) * 0.01
+    decA = float(aAvg) * 0.01
+    decQ = float(qAvg) * 0.01
+    decT = float(tAvg) * 0.01
 
     weightedA = decA * 0.3
     weightedQ = decQ * 0.3
