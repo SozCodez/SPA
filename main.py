@@ -211,6 +211,11 @@ def checkAdv_status(overall, att, missing):
     return sStatus
 studentStatus = checkAdv_status(overall_grade, sAttendance, sMissing)
 
+#to round answered averages
+fltSa = float(sAavg)
+fltSq = float(sQavg)
+fltSt = float(sTavg)
+
 #final student summary
 print("========================================")
 print("             STUDENT SUMMARY             ")
@@ -223,9 +228,9 @@ print("~Student Status~")
 print(studentStatus)
 print()
 print()
-print("Assignment Avg: ", sAavg)
-print("Quiz Avg: ", sQavg)
-print("Test Avg: ", sTavg)
+print("Assignment Avg: ", round(fltSa, 2))
+print("Quiz Avg: ", round(fltSq, 2))
+print("Test Avg: ", round(fltSt, 2))
 print()
 print("~Overall Grade~")
 print(round(overall_grade, 2))
